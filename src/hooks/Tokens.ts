@@ -132,7 +132,7 @@ export function useSearchInactiveTokenLists(search: string | undefined, minResul
   const [allTokens, setAllTokens] = useState<TokenList>()
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/solana-labs/token-list/main/src/tokens/solana.tokenlist.json')
+    fetch('https://raw.githubusercontent.com/Jungle-Finance/token-list/main/src/tokens/solana.tokenlist.json')
       .then((r) => r.json())
       .then((data) => setAllTokens(data))
   }, [network])

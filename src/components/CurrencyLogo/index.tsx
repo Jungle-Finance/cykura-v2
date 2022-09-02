@@ -18,7 +18,7 @@ export const getTokenLogoURL = (address: PublicKey) => {
   if (address.equals(SPACE_FALCON.address)) {
     return `https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/${address.toString()}/logo.svg`
   } else {
-    return `https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/${address.toString()}/logo.png`
+    return `https://raw.githubusercontent.com/Jungle-Finance/token-list/main/assets/mainnet/${address.toString()}/logo.png`
   }
 }
 
