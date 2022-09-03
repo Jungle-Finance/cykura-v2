@@ -16,6 +16,12 @@ import {
   SOLVENT,
   FXS,
   FCSTEP_VOLT,
+  JFI_MAIN,
+  I_JFI_Q4_MAIN,
+  J_JFI_MAIN,
+  RAY_MAIN,
+  I_RAY_Q4_MAIN,
+  J_RAY_MAIN
 } from '../constants/tokens'
 import { useUserAddedTokens } from '../state/user/hooks'
 import { useActiveWeb3ReactSol } from './web3'
@@ -47,6 +53,15 @@ export function useAllTokens(): { [address: string]: Token } {
   } else if (network === 'mainnet-beta') {
     // return mainnet tokens
     const map = {
+      // Custom
+      [JFI_MAIN.address.toString()]: JFI_MAIN,
+      [I_JFI_Q4_MAIN.address.toString()]: I_JFI_Q4_MAIN,
+      [J_JFI_MAIN.address.toString()]: J_JFI_MAIN,
+      [RAY_MAIN.address.toString()]: RAY_MAIN,
+      [I_RAY_Q4_MAIN.address.toString()]: I_RAY_Q4_MAIN,
+      [J_RAY_MAIN.address.toString()]: J_RAY_MAIN,
+
+      // Old
       [WSOL_MAIN.address.toString()]: WSOL_MAIN,
       [SOLUSDC_MAIN.address.toString()]: SOLUSDC_MAIN,
       [SOLUSDT_MAIN.address.toString()]: SOLUSDT_MAIN,

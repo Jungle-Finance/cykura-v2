@@ -3,6 +3,48 @@ import { Token } from '@cykura/sdk-core'
 
 // TODO fetch tokens from a curated JSON file. Current approach gets ugly as more tokens are listed
 // Mainnet TOKENS
+export const JFI_MAIN = new Token(
+    101,
+    new PublicKey('GePFQaZKHcWE5vpxHfviQtH5jgxokSs51Y5Q4zgBiMDs'),
+    9,
+    'JFI',
+    'Jungle DeFi Governance Token'
+)
+export const I_JFI_Q4_MAIN = new Token(
+    101,
+    new PublicKey('iJF17JCu78E51eAgwtCwvgULHh2ZqCeRrcFP7wgcc6w'),
+    9,
+    'I-JFI-Q4',
+    'I-JFI-Q4'
+)
+export const J_JFI_MAIN = new Token(
+    101,
+    new PublicKey('jJF1SrhzpyqYawE9ruSVKrHjfxjaG5TUMFB5vnXUWVm'),
+    9,
+    'J-JFI',
+    'Jungle-Staked JFI'
+)
+export const RAY_MAIN = new Token(
+    101,
+    new PublicKey('4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R'),
+    6,
+    'RAY',
+    'Raydium'
+)
+export const I_RAY_Q4_MAIN = new Token(
+    101,
+    new PublicKey('iRAYYHCNhEpbDiVt6QKK3Q57DMgw4p8zEKsVz3WfMjW'),
+    6,
+    'I-RAY-Q4',
+    'I-RAY-Q4'
+)
+export const J_RAY_MAIN = new Token(
+    101,
+    new PublicKey('jRAYPwLn4ZRGRSKu7GWu6B3Qx3Vj2JU88agUweEceyo'),
+    6,
+    'J-RAY',
+    'Jungle-Staked RAY'
+)
 
 export const SOLUSDC_MAIN = new Token(
   101,
