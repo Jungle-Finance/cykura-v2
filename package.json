@@ -90,7 +90,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom"
   },
   "eslintConfig": {
